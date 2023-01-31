@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<SchoolContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
 ));
+builder.Services.AddScoped<DbInitializer>();
 
 
 //The AddDatabaseDeveloperPageExceptionFilter provides helpful error information in the development environment.
