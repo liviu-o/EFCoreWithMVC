@@ -96,42 +96,42 @@ namespace ContosoUniversity.Data
                     context.SaveChanges();
                 }
 
-                ////Cinema
-                //if (!context.Departments.Any())
-                //{
-                //    context.Departments.AddRange(new List<Department>()
-                //    {
-                //        new Department()
-                //        {
-                //            Name = "English",
-                //            Budget = 350000,
-                //            StartDate = DateTime.Parse("2007-09-01"),
-                //            InstructorID  = context.Instructors.Single( i => i.LastName == "Abercrombie").ID
-                //        },
-                //         new Department()
-                //         {
-                //             Name = "Mathematics",
-                //             Budget = 100000,
-                //             StartDate = DateTime.Parse("2007-09-01"),
-                //             InstructorID  = context.Instructors.Single( i => i.LastName == "Fakhouri").ID
-                //         },
-                //         new Department()
-                //         {
-                //             Name = "Engineering",
-                //             Budget = 350000,
-                //             StartDate = DateTime.Parse("2007-09-01"),
-                //             InstructorID  = context.Instructors.Single( i => i.LastName == "Harui").ID
-                //         },
-                //         new Department()
-                //         {
-                //             Name = "Economics",
-                //             Budget = 100000,
-                //             StartDate = DateTime.Parse("2007-09-01"),
-                //             InstructorID  = context.Instructors.Single( i => i.LastName == "Kapoor").ID
-                //         },
-                //    });
-                //    context.SaveChanges();
-                //}
+                //Cinema
+                if (!context.Departments.Any())
+                {
+                    context.Departments.AddRange(new List<Department>()
+                    {
+                        new Department()
+                        {
+                            Name = "English",
+                            Budget = 350000,
+                            StartDate = DateTime.Parse("2007-09-01"),
+                            InstructorID  = context.Instructors.Single( i => i.LastName == "Abercrombie").ID
+                        },
+                         new Department()
+                         {
+                             Name = "Mathematics",
+                             Budget = 100000,
+                             StartDate = DateTime.Parse("2007-09-01"),
+                             InstructorID  = context.Instructors.Single( i => i.LastName == "Fakhouri").ID
+                         },
+                         new Department()
+                         {
+                             Name = "Engineering",
+                             Budget = 350000,
+                             StartDate = DateTime.Parse("2007-09-01"),
+                             InstructorID  = context.Instructors.Single( i => i.LastName == "Harui").ID
+                         },
+                         new Department()
+                         {
+                             Name = "Economics",
+                             Budget = 100000,
+                             StartDate = DateTime.Parse("2007-09-01"),
+                             InstructorID  = context.Instructors.Single( i => i.LastName == "Kapoor").ID
+                         },
+                    });
+                    context.SaveChanges();
+                }
 
                 //Cinema
                 if (!context.Courses.Any())
@@ -141,37 +141,37 @@ namespace ContosoUniversity.Data
                         new Course()
                         {
                            CourseID=1050,Title="Chemistry",Credits=3,
-                           //DepartmentID = context.Departments.Single( s => s.Name == "Engineering").DepartmentID
+                           DepartmentID = context.Departments.Single( s => s.Name == "Engineering").DepartmentID
                         },
                         new Course()
                         {
                            CourseID=4022,Title="Microeconomics",Credits=3,
-                           //DepartmentID = context.Departments.Single( s => s.Name == "Economics").DepartmentID
+                           DepartmentID = context.Departments.Single( s => s.Name == "Economics").DepartmentID
                         },
                         new Course()
                         {
                             CourseID=4041,Title="Macroeconomics",Credits=3,
-                            //DepartmentID = context.Departments.Single( s => s.Name == "Economics").DepartmentID
+                            DepartmentID = context.Departments.Single( s => s.Name == "Economics").DepartmentID
                         },
                          new Course()
                         {
                            CourseID=1045,Title="Calculus",Credits=4,
-                           //DepartmentID = context.Departments.Single( s => s.Name == "Mathematics").DepartmentID
+                           DepartmentID = context.Departments.Single( s => s.Name == "Mathematics").DepartmentID
                         },
                          new Course()
                         {
                             CourseID=3141,Title="Trigonometry",Credits=4,
-                            //DepartmentID = context.Departments.Single( s => s.Name == "Mathematics").DepartmentID
+                            DepartmentID = context.Departments.Single( s => s.Name == "Mathematics").DepartmentID
                         },
                           new Course()
                         {
                             CourseID=2021,Title="Composition",Credits=3,
-                            //DepartmentID = context.Departments.Single( s => s.Name == "English").DepartmentID
+                            DepartmentID = context.Departments.Single( s => s.Name == "English").DepartmentID
                         },
                            new Course()
                         {
                             CourseID=2042,Title="Literature",Credits=4,
-                            //DepartmentID = context.Departments.Single( s => s.Name == "English").DepartmentID
+                            DepartmentID = context.Departments.Single( s => s.Name == "English").DepartmentID
                         },
                     });
                     context.SaveChanges();
@@ -217,12 +217,12 @@ namespace ContosoUniversity.Data
                          },
                          new CourseAssignment()
                          {
-                            CourseID = context.Courses.Single(c => c.Title == "Microeconomics" ).CourseID,
+                            CourseID = 4041,
                             InstructorID = context.Instructors.Single(i => i.LastName == "Zheng").ID
                          },
                           new CourseAssignment()
                          {
-                            CourseID = context.Courses.Single(c => c.Title == "Microeconomics" ).CourseID,
+                            CourseID = 4022,
                             InstructorID = context.Instructors.Single(i => i.LastName == "Zheng").ID
                          },
                            new CourseAssignment()
