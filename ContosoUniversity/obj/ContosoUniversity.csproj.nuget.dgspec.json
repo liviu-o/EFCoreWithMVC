@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liviu\\Desktop\\MainProject\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj": {}
+    "C:\\Users\\admlcauia1\\Desktop\\EFCoreWithMVC-main\\EFCoreWithMVC\\ContosoUniversity\\ContosoUniversity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liviu\\Desktop\\MainProject\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj": {
+    "C:\\Users\\admlcauia1\\Desktop\\EFCoreWithMVC-main\\EFCoreWithMVC\\ContosoUniversity\\ContosoUniversity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\MainProject\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+        "projectUniqueName": "C:\\Users\\admlcauia1\\Desktop\\EFCoreWithMVC-main\\EFCoreWithMVC\\ContosoUniversity\\ContosoUniversity.csproj",
         "projectName": "ContosoUniversity",
-        "projectPath": "C:\\Users\\Liviu\\Desktop\\MainProject\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
-        "packagesPath": "C:\\Users\\Liviu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liviu\\Desktop\\MainProject\\ContosoUniversity\\ContosoUniversity\\obj\\",
+        "projectPath": "C:\\Users\\admlcauia1\\Desktop\\EFCoreWithMVC-main\\EFCoreWithMVC\\ContosoUniversity\\ContosoUniversity.csproj",
+        "packagesPath": "C:\\Users\\admlcauia1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admlcauia1\\Desktop\\EFCoreWithMVC-main\\EFCoreWithMVC\\ContosoUniversity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Liviu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admlcauia1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,6 +70,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
